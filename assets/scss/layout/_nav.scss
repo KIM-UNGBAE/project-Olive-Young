@@ -1,0 +1,43 @@
+.gnb{
+    height: 44px;
+    background: $color-white1;
+    .nav-list{
+        display: flex;
+        justify-content: space-between;        
+        align-items: center;
+        height: 100%;
+        padding: 0 16px;
+    }
+    .nav-item{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .nav{
+        position: relative;
+        display: block;
+        &.on{
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -12px;
+                width: 100%;
+                height: 2px;
+                background: rgb(19, 21, 24);
+            }
+            span{
+                font-weight: 700;
+                color: rgb(19, 21, 24);
+            }
+        }
+        span{
+            position: relative;
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-gray2;
+            line-height: 19px;
+            z-index: 1;
+        }
+    }
+}

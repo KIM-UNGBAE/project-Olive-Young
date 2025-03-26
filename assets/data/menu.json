@@ -1,0 +1,45 @@
+{
+    "items": [
+        {
+            "thumb":"./assets/images/sc_menu_img1.webp",
+            "title":"W케어"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img2.webp",
+            "title":"건기식찾기"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img3.webp",
+            "title":"라이브"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img4.webp",
+            "title":"선물하기"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img5.webp",
+            "title":"세일"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img6.webp",
+            "title":"올영매장"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img7.webp",
+            "title":"멤버십/쿠폰"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img8.webp",
+            "title":"기프트카드"
+        },
+        {
+            "thumb":"./assets/images/sc_menu_img9.webp",
+            "title":"AWARDS"
+        },
+        {
+            "thumb": "data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20name%3D%22ArrowRight%22%20shape%3D%22line%22%20class%3D%22css-1o3mgl8%22%3E%3Cpath%20d%3D%22M17.1416%206.41797L27.1466%2016.4128L17.1515%2026.4179%22%20fill%3D%22none%22%20stroke%3D%22%23757d86%22%20stroke-width%3D%221.8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M4.12109%2016.4245L26.1211%2016.4136%22%20stroke%3D%22%23757d86%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22square%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+            "title": "더보기"
+        }
+        
+    ]
+}

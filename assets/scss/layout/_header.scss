@@ -1,0 +1,93 @@
+// 헤더
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 40;
+    &.hide{
+        .sc-banner1{
+            overflow: hidden;
+            height: 0;
+            transform: translateY(-100%);
+        }
+        .group-flex{
+            transform: translateY(-100%);
+            transition: transform .3s;
+            transition-delay: .3s;
+        }
+        .gnb{
+            transform: translateY(-48px);
+            transition: transform .3s;
+            transition-delay: .3s;
+        }
+    }
+    // 배너
+    .sc-banner1{
+        position: relative;
+        width: 100%;
+        height: 56px;
+        &.active{
+            display: none;
+        }
+        .group-img{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .btn-close{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            svg{
+                display: block;
+                width: 14px;
+                height: 14px;
+            }
+            path{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                stroke: #b2b8be;
+            }
+        }
+    }
+    .group-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        padding: 0 6px 0 15px;
+        background: $color-white1;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 40px;
+        a:nth-child(2){
+            margin-left: 10px;
+        }
+        a:nth-child(3){
+            margin-left: 16px;
+        }
+    }
+    .btn-area{
+        display: flex;
+        button{
+            display: flex;
+            justify-content: center;            
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+/* 공통소스 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.inner{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* sp1 */
+.footer .call-list a:nth-child(1)::before,
+.footer .call-list a:nth-child(2)::before,
+.footer .group-info .btn-info::after,
+.footer .group-sns a::before{
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-size: 92px;
+}
+
+.scroll-hidden{
+    overflow: hidden;
+    &::before{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+body{
+    &::before{
+        content: '';
+        visibility: hidden;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        opacity: 0;
+        z-index: 49;
+    }
+}
+
+// control-area1
+.control-area1{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 6px;
+    margin-top: 15px;
+    .pagination1{
+        text-align: center;
+    }
+    .swiper-pagination-bullet{
+        width: 6px;
+        height: 6px;
+        opacity: 1;
+        border-radius: 50%;
+        vertical-align: top;
+        background-color: $color-white2;
+    }
+    .swiper-pagination-bullet-active{
+        background: $color-black2;
+    }
+}
+
+// section headline, link-more, link-more2
+.section{
+    position: relative;
+    margin-top: 50px;
+    .group-headline{
+        display: flex;
+        flex-wrap: wrap;
+        place-content: center space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        min-height: 55px;
+        padding: 15px 0;
+        row-gap: 6px;
+        word-break: keep-all;
+    }
+    .headline{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        width: 100%;
+        padding-right: 58px;
+    }
+    .swiper-wrapper{
+        padding-left: 15px;
+    }
+    .link-more{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -1px;
+        right: 15px;
+        height: 55px;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: rgb(80, 88, 95);
+    }
+    .link-more2{
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        span{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            padding: 11px 19px;
+            border: 1px solid $color-white2;
+            border-radius: 20.5px;
+            line-height: 17px;
+            color: $color-gray6;
+        }
+        path{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// group-cate
+.group-cate{
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+    white-space: nowrap;
+    margin-bottom: 20px;
+    .swiper-slide{
+        width: auto;
+    }
+    a{
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        font-size: 13px;
+        height: 32px;
+        border-radius: 16px;
+        line-height: 16px;
+        padding: 10px 16px;
+        color: rgb(117, 125, 134);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(218, 221, 224);
+        &.on{
+            border: 1px solid rgb(19, 21, 24);
+            background-color: rgb(19, 21, 24);
+            color: $color-white1;
+        }
+    }
+}
+
+// control-area2
+.control-area2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    margin-top: 30px;
+    .btn-prev{
+        margin-right: 30px;
+    }
+    .fraction{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .curr-num{
+            min-width: 18px;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+            color: $color-gray6;
+        }
+        .total-num{
+            position: relative;
+            padding-left: 17px;
+            color: $color-gray1;
+            text-align: left;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                width: 1px;
+                height: 12px;
+                margin-top: -6px;
+                background-color: $color-white2;
+            }
+        }
+    }
+    .btn-next{
+        margin-left: 30px;
+    }
+}
+
