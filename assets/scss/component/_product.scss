@@ -8,6 +8,7 @@
     }
     .ori{
         display: block;
+        order: -1;
         margin-bottom: 1px;
         font-size: 11px;
         line-height: 13px;
@@ -83,22 +84,23 @@
 .list1{
     a{
         display: block;
+        width: 140px;
+        height: auto;
     }
     .img-area{
         position: relative;
+        padding-bottom: 100%;
         overflow: hidden;
         border-radius: 4px;
         background-color: $color-white3;
-        position: relative;
-        padding-bottom: 100%;
         margin-bottom: 14px;
     }
     img{
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         right: 0;
+        bottom: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -145,6 +147,7 @@
         gap: 15px;
     }
    a{
+        position: relative; 
         display: flex;
         align-items: center;
         width: 100%;
@@ -178,10 +181,11 @@
         }
    }
    .desc-wrap{
-        padding-left: 15px;
-   }
-   .text-box{
-        width: 302px;
+        width: calc(100% - 180px);
+       padding-left: 15px;
+    }
+    .text-box{
+        width: 100%;
         .desc{
             line-height: 16.5px;
             color: rgb(19, 21, 24);
@@ -190,6 +194,7 @@
    }
    .price-box{
         display: flex;
+        flex-wrap: wrap;
         gap: 4px;
         margin-bottom: 8px;
    }
@@ -200,8 +205,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 25px;
+        right: 26px;
         width: 36px;
-        height: 100%;
    }
    svg{
         display: block;

@@ -76,6 +76,9 @@ $(function(){
     const suggestionSlide = new Swiper('.suggestion-slide',{
         slidesPerView: 3.2,
         spaceBetween: 10,
+        breakpoints:{
+            320: {slidesPerView: 2.2},
+        }
     })
 
     // 탭 클릭 시 중앙 정렬 및 슬라이드 이동(sc-category, sc-event, sc-attention, .sc-popular)
@@ -240,8 +243,11 @@ $(function(){
     
     // sc-live slide
     const liveSlide = new Swiper('.live-slide',{
-        slidesPerView: 2.1,
+        slidesPerView: "auto",
         spaceBetween: 10,
+        // breakpoints:{
+        //     320: {slidesPerView: 1.465},
+        // }
     })
 
 

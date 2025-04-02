@@ -5,7 +5,12 @@
     background: $color-white4;
     .call-list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        @include mobile{
+            max-width: 225px;
+            margin: 0 auto;
+        }
         .call-item{
             display: inline-block;
             &:nth-child(1), &:nth-child(2){
@@ -21,6 +26,11 @@
                     }
                 }
             }
+            @include mobile{
+                &:nth-child(3), &:nth-child(4){
+                    margin-top: 8px;
+                }
+            }
         }
         .call-item + .call-item{
             &::before{
@@ -31,6 +41,14 @@
                 height: 11px;
                 margin: 3px 8px 0;
                 background: $color-white2;
+            }
+        }
+        .call-item:nth-child(3){
+            @include mobile{
+                &::before{
+                    content: '';
+                    display: none;
+                }
             }
         }
         a{
@@ -289,7 +307,7 @@
 .fixed-btn{
     position: fixed;
     bottom: 65px;
-    right: 0;
+    right: 10px;
     transform: translateY(50%);
     transition: transform .2s ease-out .2s;
     z-index: 25;

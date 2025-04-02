@@ -64,12 +64,14 @@ body{
     .swiper-pagination-bullet{
         width: 6px;
         height: 6px;
-        opacity: 1;
         border-radius: 50%;
+        opacity: 1;
         vertical-align: top;
         background-color: $color-white2;
     }
     .swiper-pagination-bullet-active{
+        width: 16px;
+        border-radius: 100px;
         background: $color-black2;
     }
 }
