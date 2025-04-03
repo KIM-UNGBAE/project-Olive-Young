@@ -1227,17 +1227,12 @@ body::before {
 
 .sc-saw .content {
   display: flex;
+  flex-wrap: wrap;
   grid-column-gap: 8px;
-  padding-right: 15px;
-}
-@media (max-width: 320px) {
-  .sc-saw .content {
-    flex-wrap: wrap;
-  }
 }
 .sc-saw .content a {
   display: block;
-  width: calc((100% - 48px) / 6);
+  width: calc((100% - 45px) / 3);
 }
 @media (max-width: 320px) {
   .sc-saw .content a {
@@ -1256,6 +1251,9 @@ body::before {
 .sc-saw .content a:nth-child(4), .sc-saw .content a:nth-child(5), .sc-saw .content a:nth-child(6) {
   position: relative;
   margin-bottom: 10px;
+}
+.sc-saw .content a .img-area {
+  border-radius: 0;
 }
 @media (max-width: 320px) {
   .sc-saw .content a .text-area {

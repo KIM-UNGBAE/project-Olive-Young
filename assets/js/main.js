@@ -245,9 +245,6 @@ $(function(){
     const liveSlide = new Swiper('.live-slide',{
         slidesPerView: "auto",
         spaceBetween: 10,
-        // breakpoints:{
-        //     320: {slidesPerView: 1.465},
-        // }
     })
 
 

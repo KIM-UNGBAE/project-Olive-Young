@@ -439,14 +439,11 @@
 .sc-saw{
     .content{
         display: flex;
+        flex-wrap: wrap;
         grid-column-gap: 8px;
-        padding-right: 15px;
-        @include mobile{
-            flex-wrap: wrap;
-        }
         a{
             display: block;
-            width: calc((100% - 48px) / 6);
+            width: calc((100% - 45px) / 3);
             @include mobile{
                 flex: 0 0 91px;
                 min-height: 55vw;
@@ -464,6 +461,9 @@
             &:nth-child(6){
                 position: relative;
                 margin-bottom: 10px;
+            }
+            .img-area{
+                border-radius: 0;
             }
             .text-area{
                 @include mobile{
