@@ -224,9 +224,9 @@ body::before {
 .group-cate {
   position: relative;
   display: flex;
+  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-width: none;
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
   white-space: nowrap;
@@ -1156,6 +1156,7 @@ body::before {
 .sc-event .prd-area .prd-wrap {
   display: block;
   position: relative;
+  width: calc(100% - 30px);
   height: 68.8vw;
   overflow: hidden;
   border-radius: 4px;
@@ -1236,7 +1237,6 @@ body::before {
 }
 @media (max-width: 320px) {
   .sc-saw .content a {
-    flex: 0 0 91px;
     min-height: 55vw;
   }
 }

@@ -369,6 +369,7 @@
         .prd-wrap{
             display: block;
             position: relative;
+            width: calc(100% - 30px);
             height: 68.8vw;
             overflow: hidden;
             border-radius: 4px;
@@ -445,7 +446,6 @@
             display: block;
             width: calc((100% - 45px) / 3);
             @include mobile{
-                flex: 0 0 91px;
                 min-height: 55vw;
             }
             &:nth-child(1),
