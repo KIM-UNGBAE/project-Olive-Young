@@ -1479,13 +1479,16 @@ body::before {
   background-color: #b2b8be;
 }
 
+.sc-attention .group-cont .link-attention {
+  display: block;
+}
 .sc-attention .group-cont .prd-area {
   display: block;
   margin: 0 0 15px 0;
 }
 .sc-attention .group-cont .prd-wrap {
   position: relative;
-  width: calc(100vw - 30px);
+  width: calc(100% - 30px);
   height: 52vw;
   overflow: hidden;
   border-radius: 4px;

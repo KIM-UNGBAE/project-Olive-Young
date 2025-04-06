@@ -704,13 +704,16 @@
 // 주목해야할 브랜드
 .sc-attention{
     .group-cont{
+        .link-attention{
+            display: block;
+        }
         .prd-area{
             display: block;
             margin: 0 0 15px 0;
         }
         .prd-wrap{
             position: relative;
-            width: calc(100vw - 30px);
+            width: calc(100% - 30px);
             height: 52vw;
             overflow: hidden;
             border-radius: 4px;
@@ -762,7 +765,6 @@
                 }
             }
         }
-
         .attention-item + .attention-item{
             margin-top: 15px;
         }
